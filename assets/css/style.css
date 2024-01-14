@@ -2,6 +2,11 @@
     --purple: #92278f;
 }
 
+body {
+    background-color: #202020;
+    color: white;
+}
+
 #intro {
     text-align: center;
     padding: 0 5vw;
@@ -11,17 +16,24 @@ h1 {
     margin-bottom: 0;
 }
 
-#intro img {
-    max-height: 40px;
+img {
+    max-height: 80px;
     padding: 15px;
     object-fit: contain;
 }
 
-header {
+
+
+/* header {
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
     font-weight:900;
+} */
+
+.card {
+    min-width: 200px;
+    min-height: 130px;
 }
 
 button {
@@ -35,13 +47,14 @@ button {
     margin: auto;
     font-size: large;
     font-weight: 900;
+    margin: 10px;
 }
 
 button:hover {
-    background-color: indigo;
+    background-color: #bc33b5;
 }
 
-.question, #form {
+#questions, #question1, #question2, #question3, #question4, #question5, #form {
     text-align: center;
     padding: 0 5vw;
     display: none;

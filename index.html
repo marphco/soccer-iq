@@ -3,85 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link reset.css -->
+    <link rel="stylesheet" href="./assets/css/reset.css"></link>
+
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></link>
+
+    <!-- Link style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+
+    <!-- Link favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <title>Soccer IQ</title>
 </head>
 <body>
-    <header>
-        <div id="highscore">
-            <p>View Highscore: <span id="score"></span></p>
-        </div>
 
-        <div id="time">
-            <p>Time: <span id="seconds"></span></p>
-        </div>
-    </header>
+    <section id="logo" class="d-flex justify-content-center">
+
+        <img src="./assets/images/logo-soccer-iq.png" class="col-12 col-lg-3 my-5">
+
+    </section>
 
     <section id="intro">
-        <img src="./assets/images/logo-soccer-iq.png">
+
         <h1>Soccer's Premier Knowledge Quiz: Kick Off Your Mastery!</h1>
         <p>Test your soccer knowledge! Answer questions within the time limit and prove your Soccer IQ.<br>The clock is ticking, so kick off the challenge now!<br>Keep in mind that incorrect answers will penalize your score or time.</p>
         <button id="start-quiz">Start Quiz</button>
+
     </section>
 
-    <section class="question">
-        <h2>Which European team won the <i>treble</i> in the season 2023</h2>
-        <ul>
-            <button>Real Madrid</button>
-            <button>Napoli</button>
-            <button class="correct">Manchester City</button>
-            <button>Bayern Monaco</button>
-        </ul>
+    <section id="quiz">
+
+        <div id="questions">
+            <h2></h2>
+            <div id="answers"></div>
+        </div>
+
     </section>
 
-    <section class="question">
-        <h2>2</h2>
-        <ul>
-            <button>Real Madrid</button>
-            <button>Napoli</button>
-            <button class="correct">Manchester City</button>
-            <button>Bayern Monaco</button>
-        </ul>
+    <section id="game-info" class="row d-flex justify-content-center p-3">
+
+        <section id="timer" class="p-3 col-12 col-lg-3 col-md-3 text-center">
+
+            <div class="card">
+                <div class="card-header">
+                Time
+                </div>
+                <div class="card-body">
+                <h2 class="card-title"><span id="time"></span></h2>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="score" class="p-3 col-12 col-lg-3 col-md-3 text-center">
+            <div class="card">
+                <div class="card-header">
+                    Highscore
+                </div>
+                <div class="card-body">
+                    <table id="highscore" class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
     </section>
 
-    <section class="question">
-        <h2>3</h2>
-        <ul>
-            <button>Real Madrid</button>
-            <button>Napoli</button>
-            <button class="correct">Manchester City</button>
-            <button>Bayern Monaco</button>
-        </ul>
-    </section>
-
-    <section class="question">
-        <h2>4</h2>
-        <ul>
-            <button>Real Madrid</button>
-            <button>Napoli</button>
-            <button class="correct">Manchester City</button>
-            <button>Bayern Monaco</button>
-        </ul>
-    </section>
-
-    <section class="question">
-        <h2>5</h2>
-        <ul>
-            <button>Real Madrid</button>
-            <button>Napoli</button>
-            <button class="correct">Manchester City</button>
-            <button>Bayern Monaco</button>
-        </ul>
-    </section>
-
-    <section id="form">
-        <h2>Submit your Highscore</h2>
-        <form>
-            <input placeholder="Your initials" id="initials" />
-            <button id="submit-button">Submit Highscore</button>
+    <section id="end-game" class="hide row justify-content-center p-3">
+        <h2 class="row d-flex justify-content-center">Game Over!</h2>
+        <p class="row d-flex justify-content-center">Your final score is: <span id="final-score" class="row d-flex justify-content-center"></span></p>
+        
+        <form id="score-form" class="text-center row col-12 col-lg-3 justify-content-center">
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials" maxlength="3" required>
+            <button type="submit" class="m-2">Submit</button>
         </form>
+
     </section>
     
-<script src="./assets/js/script.js"></script>
+    <!-- Link JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
