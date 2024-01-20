@@ -32,5 +32,5 @@ The following image shows the web application's appearance on smartphones' scree
 
 ## Repository and Webpage link
 
-- [Repository Link](https://github.com/marphco/socccer-iq)
+- [Repository Link](https://github.com/marphco/soccer-iq)
 - [Deployed Application Link](https://marphco.github.io/soccer-iq/)

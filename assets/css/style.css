@@ -22,15 +22,6 @@ img {
     object-fit: contain;
 }
 
-
-
-/* header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 30px;
-    font-weight:900;
-} */
-
 .card {
     min-width: 200px;
     min-height: 130px;
@@ -52,6 +43,19 @@ button {
 
 button:hover {
     background-color: #bc33b5;
+}
+
+.feedback {
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.wrong {
+    color: red;
 }
 
 #questions, #question1, #question2, #question3, #question4, #question5, #form {
